@@ -93,7 +93,7 @@ ON_RUN_PATTERN(zero,
 // and "REGISTRY END"
 __struct_pattern patterns[] = {
   // REGISTRY START
-  REGISTER_PATTERN(1, 3)
+  REGISTER_PATTERN(one, 3)
   REGISTER_PATTERN(two, 4)
   REGISTER_PATTERN(three, 5)
   REGISTER_PATTERN(four, 6)
