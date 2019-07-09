@@ -16,9 +16,18 @@
 // take less than 100ms.
 //
 // the second part of a pattern is the registry, which is at the bottom of the file.
+//
+// the neopixel api is exposed through an object called "leds". it's an instance of
+// Adafruit_NeoPixel, which is from the Adafruit NeoPixel library: https://github.com/adafruit/Adafruit_NeoPixel
+//
+// The configuration for the NeoPixel is under the file called Kedavara.
+// If you want to change the number of LEDs on the strip, it's defined by #define NUMPIXELS.
+// To change the pin the NeoPixel is connected to, change #define NEOPIXEL_PIN.
 
-ON_RUN_PATTERN(1,
+ON_RUN_PATTERN(one,
 {
+  // clear the display
+  leds.clear();
   delay(10);
 })
 

@@ -4,8 +4,9 @@
 #endif
 
 #define NUMPIXELS 16
+#define NEOPIXEL_PIN 6
 
-Adafruit_NeoPixel leds(NUMPIXELS, 6, NEO_GRB + NEO_KHZ800);
+Adafruit_NeoPixel leds(NUMPIXELS, NEOPIXEL_PIN, NEO_GRB + NEO_KHZ800);
 
 #include "defines.h"
 #include "patterns.h"
