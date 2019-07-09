@@ -30,11 +30,6 @@ void setup() {
   Serial.print(numPatterns);
   Serial.println(" patterns");
 
-  pinMode(2, INPUT_PULLUP);
-  //attachInterrupt(digitalPinToInterrupt(2), checkButtons, FALLING);
-
-  pinMode(13, OUTPUT);
-
   for (uint8_t i = 0; i < numPatterns; i++) {
     pinMode(patterns[i].pin, INPUT_PULLUP);
   }
