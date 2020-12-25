@@ -49,7 +49,7 @@ void loop() {
 }
 
 // check for new inputs.
-// this is a seperate function to allow
+// this is a separate function to allow
 // possible usage of external interrupts.
 // if interrupts are used, a pattern's code
 // can use delay() all it wants without
